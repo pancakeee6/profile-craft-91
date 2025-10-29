@@ -27,9 +27,9 @@ const Contact = () => {
     <section id="contact" className="py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Hubungi Kami</h2>
           <p className="text-xl text-muted-foreground">
-            Ready to start your project? Let's discuss how we can help you succeed.
+            Siap melangkah lebih jauh? Hubungi kami dan temukan bagaimana kampus kami dapat membantu kamu mencapai kesuksesan.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold">Email</h3>
-              <p className="text-sm text-muted-foreground">hello@innovateco.com</p>
+              <p className="text-sm text-muted-foreground">poltekbaja@gmail.com</p>
             </CardContent>
           </Card>
 
@@ -50,7 +50,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold">Phone</h3>
-              <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-sm text-muted-foreground">+62 823-2558-0008</p>
             </CardContent>
           </Card>
 
@@ -59,47 +59,11 @@ const Contact = () => {
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-semibold">Office</h3>
-              <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+              <h3 className="font-semibold">Alamat</h3>
+              <p className="text-sm text-muted-foreground">Jl. Raya Dukuhwaru, km 7, Dukuhwaru, Kab.Tegal, Jawa Tengah.</p>
             </CardContent>
           </Card>
         </div>
-
-        <Card className="max-w-2xl mx-auto mt-12 shadow-xl">
-          <CardContent className="pt-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Input 
-                  placeholder="Your Name" 
-                  value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  required
-                />
-              </div>
-              <div>
-                <Input 
-                  type="email" 
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  required
-                />
-              </div>
-              <div>
-                <Textarea 
-                  placeholder="Your Message" 
-                  className="min-h-[150px]"
-                  value={formData.message}
-                  onChange={(e) => setFormData({...formData, message: e.target.value})}
-                  required
-                />
-              </div>
-              <Button type="submit" size="lg" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
